@@ -1,0 +1,10 @@
+<main class="wrapper">
+  <form [formGroup]="newNoteForm">
+      <label for="" class="block">Title</label>
+      <input formControlName="title" type="text" class="block">
+      <label for="" class="block">Content</label>
+      <textarea formControlName="content" name="" id="" cols="30" rows="10" class="block"></textarea>
+      <button type="submit" class="primary" (click)="submitForm(newNoteForm.value)">Save Note</button>
+  </form>
+
+</main>

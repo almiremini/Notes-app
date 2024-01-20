@@ -1,0 +1,8 @@
+<main class="wrapper">
+    @for (note of allNotes; track note; let i = $index){
+        <app-dashboard-card [note]="note" [i]="i"></app-dashboard-card>
+
+    }
+        
+    <button class="primary" [routerLink]="['/new-note']">+ New Note</button>
+</main>
